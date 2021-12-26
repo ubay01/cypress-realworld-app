@@ -17,7 +17,7 @@ describe("User Sign-up and Login", function () {
     });
   });
 
-  it("should redirect unauthenticated user to signin page", function () {
+  it("C1 C2319 C2320 should redirect unauthenticated user to signin page", function () {
     cy.visit("/personal");
     cy.location("pathname").should("equal", "/signin");
     cy.visualSnapshot("Redirect to SignIn");
