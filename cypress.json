@@ -16,7 +16,15 @@
       "url": "http://localhost:3001/__coverage__"
     }
   },
-  "experimentalStudio": true
+  "experimentalStudio": true,
+  "reporter": "cypress-testrail-reporter",
+    "reporterOptions": {
+        "host": "https://flbeta.testrail.io/",
+        "username": "amir.ubaidillah@gmail.com",
+        "password": "Telpon*441861",
+        "projectId": 1,
+        "suiteId": 1
+        }   
   
 
 }
