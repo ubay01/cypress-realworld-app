@@ -150,7 +150,7 @@
     "cypress:run:mobile": "cypress run --config viewportWidth=375,viewportHeight=667",
     "cypress:run:dashboard": "cypress run --record --key b382d1c7-ed41-4926-927e-0368c7ee0bc7",
     "test:dashboard": "yarn cypress:run:dashboard",
-    "test": "yarn cypress:open",
+    "test": "yarn cypress:run:dashboard",
     "test:headless": "yarn cypress:run",
     "test:api": "yarn cypress:run --spec 'cypress/tests/api/*'",
     "test:unit": "react-scripts test --runInBand",
