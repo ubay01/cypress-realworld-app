@@ -32,8 +32,9 @@ jobs:
         run: yarn install
 
       # Runs a set of commands using the runners shell
-      - name: Run the App
-        run: yarn dev
+      - name: Run the App - Start Server - And Test
+        run: |
+            yarn dev
+            start-server-and-test start 3000 cypress:run:dashboard
+            
         
-      - name: Cypress Run Headless Dashboard
-        run: yarn:test:dashboard
